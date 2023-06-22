@@ -13,3 +13,5 @@ ES6 introduces us to many great features like arrow functions, template strings,
      <li> Default parameters </li>
      <li> Rest parameter and Spread operator </li>
    </ul>
+
+#How to Setup ES6 Development Environment
