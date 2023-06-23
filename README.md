@@ -19,30 +19,30 @@ ES6 introduces us to many great features like arrow functions, template strings,
 1. Open command promt and create project directory mkdir js6-exapmle
 2. cd js6-example
 3. Run npm init . It will generate package.json which will look like this.
-               {
-                 "name": "js6-example",
-                 "version": "1.0.0",
-                 "description": "",
-                 "main": "index.js",
-                 "author": "",
-                 "license": "ISC",
-               }
+                        {
+                          "name": "js6-example",
+                          "version": "1.0.0",
+                          "description": "",
+                          "main": "index.js",
+                          "author": "",
+                          "license": "ISC",
+                        }
 4. Install webpack globally.
-      npm install -g webpack
+            npm install -g webpack
    
 6. Install a webpack locally
-   npm install webpack --save-dev
+         npm install webpack --save-dev
 
 7. Create an index.html. Add following code -
 
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-          <meta charset="UTF-8">
-      </head>
-      <body>
-      </body>
-      </html>
+               <!DOCTYPE html>
+               <html lang="en">
+               <head>
+                   <meta charset="UTF-8">
+               </head>
+               <body>
+               </body>
+               </html>
 
 8. Include <script src="bundle.js" type="text/javascript"></script> in body tag of your index.html
 
@@ -50,26 +50,26 @@ ES6 introduces us to many great features like arrow functions, template strings,
 
 10.  Add main.js file in the app directory.
 11.  Create a webpack configuration file in a root folder named webpack.config.js.
-               Add following code in this -
-              module.exports = {
-             entry: ['./app/main.js'],
-             output: {
-                 filename: 'bundle.js'
-             }
-         }; 
+                     Add following code in this -
+                          module.exports = {
+                         entry: ['./app/main.js'],
+                         output: {
+                             filename: 'bundle.js'
+                         }
+                     }; 
 
 9. Update the package.json file’s scripts property.
-          {
-              "name": "js6",
-              "version": "1.0.0",
-              "description": "",
-              "main": "index.js",
-              "scripts": {
-                "build": "webpack"
-              },
-              "author": "KRUNAL LATHIYA",
-              "license": "ISC"
-         }
+                      {
+                          "name": "js6",
+                          "version": "1.0.0",
+                          "description": "",
+                          "main": "index.js",
+                          "scripts": {
+                            "build": "webpack"
+                          },
+                          "author": "KRUNAL LATHIYA",
+                          "license": "ISC"
+                     }
 
 10. npm run build
 11. Now open an index.html file in a browser, and you will see in the Chrome developer tools,  inside the console panel, there is a log by saying.
@@ -98,25 +98,25 @@ npm install --save-dev webpack-dev-server
 
 16.  It will update our package.json -
 
-    {
-  "name": "js6-example",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack-dev-server"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^9.1.2",
-    "babel-preset-es2015": "^6.24.1",
-    "webpack": "^5.88.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
-  }
-}
+                      {
+                    "name": "js6-example",
+                    "version": "1.0.0",
+                    "description": "",
+                    "main": "index.js",
+                    "scripts": {
+                      "build": "webpack-dev-server"
+                    },
+                    "author": "",
+                    "license": "ISC",
+                    "devDependencies": {
+                      "babel-core": "^6.26.3",
+                      "babel-loader": "^9.1.2",
+                      "babel-preset-es2015": "^6.24.1",
+                      "webpack": "^5.88.0",
+                      "webpack-cli": "^5.1.4",
+                      "webpack-dev-server": "^4.15.1"
+                    }
+                  }
 
 17. Edit the webpack.config.js file.
 
