@@ -50,31 +50,115 @@ ES6 introduces us to many great features like arrow functions, template strings,
 
 10.  Add main.js file in the app directory.
 11.  Create a webpack configuration file in a root folder named webpack.config.js.
-      Add following code in this -
-     module.exports = {
-    entry: ['./app/main.js'],
-    output: {
-        filename: 'bundle.js'
-    }
-}; 
+               Add following code in this -
+              module.exports = {
+             entry: ['./app/main.js'],
+             output: {
+                 filename: 'bundle.js'
+             }
+         }; 
 
 9. Update the package.json file’s scripts property.
-    {
-        "name": "js6",
-        "version": "1.0.0",
-        "description": "",
-        "main": "index.js",
-        "scripts": {
-          "build": "webpack"
-        },
-        "author": "KRUNAL LATHIYA",
-        "license": "ISC"
-   }
+          {
+              "name": "js6",
+              "version": "1.0.0",
+              "description": "",
+              "main": "index.js",
+              "scripts": {
+                "build": "webpack"
+              },
+              "author": "KRUNAL LATHIYA",
+              "license": "ISC"
+         }
 
 10. npm run build
-11. Now open an index.html file in a browser, and you will see in the Chrome developer tools,  inside the console panel, there is logging by saying.
+11. Now open an index.html file in a browser, and you will see in the Chrome developer tools,  inside the console panel, there is a log by saying.
   “Inside main.js.”
-    
+
+12. Install the webpack development server -
+
+npm install --save-dev webpack-dev-server 
+
+13. Update Packagee.json file with the following changes -
+
+    "build": "webpack-dev-server"
+
+14. Start webpack by running -
+
+    npm run build
+
+
+  ![image](https://github.com/anjaliinfo/Javascript-ES6/assets/98171488/812f1cea-fea4-406d-88eb-a8261e5d1c46)
+
+     it says your project will serve on http://localhost:3000.
+
+15. Use Babel in our development environment.
+
+   Run  npm install babel-core babel-loader babel-preset-es2015 --save-dev  to install babel 
+
+16.  It will update our package.json -
+
+    {
+  "name": "js6-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
+
+17. Edit the webpack.config.js file.
+
+                  module.exports = {
+                   entry: './app/main.js',
+                   output: {
+                       filename: 'bundle.js'
+                   },
+                   module: {
+                       rules: [
+                           {
+                               loader: 'babel-loader',
+                               test: /\.js$/,
+                               exclude: /node_modules/
+                           }
+                       ]
+                   },
+                   devServer: {
+                       port: 3000
+                   }
+               };
+
+18.  close server and run again
+
+     npm run buid.
+
+19.  Write ES6 code in main.js file
+
+console.log('Inside main.js');
+
+      let app = (name) => {
+          console.log(`hello from ${name}`);
+      }
+      app('Anjali'); 
+
+20. You will see in the browser that it has been updated, and in the console, we can see “hello from Anjali.”
+
+ 
+
+
+
+     
  
 
  
