@@ -154,6 +154,103 @@ console.log('Inside main.js');
 
 20. You will see in the browser that it has been updated, and in the console, we can see “hello from Anjali.”
 
+21. Add following  ES6 code to main.js file and run command npm run build.
+
+                        //let and const 
+                        
+                        let a = 23;
+                        console.log(a);   
+                        
+                        const b = 535;
+                        console.log(b);  
+                        
+                        
+                        //Multi-line Strings
+                        //Users can create multi-line strings by using back-ticks(`).
+                        
+                        
+                        let greeting = `Hello World,     
+                                        Greetings to all,
+                                        Keep Learning and Practicing!`  
+                        
+                        console.log(greeting); 
+                        
+                        // Default Params
+                        
+                        //ES6
+                        let calculateArea = function(height = 100, width = 50) {  
+                            // logic
+                        }
+                        
+                        console.log(calculateArea);  
+                        
+                        
+                        // Template Literals
+                          let firstName = "Anjali";
+                          let lastName = "Shrivastava";
+                        let name = `My name is ${firstName} ${lastName}`; 
+                        
+                        console.log(name);  
+                        
+                        
+                        //Array Destructuring
+                        let fruits = ["Rose", "Banana"];
+                        let [e, f] = fruits; // Array destructuring assignment
+                        console.log(e,f);
+                        
+                        //Object Destructuring
+                        let person = {names: "Anjali", age: 28};
+                        let {names, age} = person; // Object destructuring assignment
+                        console.log(names, age); 
+                        
+                        
+                        //Promises 
+                        
+                        var asyncCall =  new Promise((resolve, reject) => {
+                           // do something
+                           resolve();
+                        }).then(()=> {   
+                           console.log('HI!');
+                        }) 
+                        
+                        
+                        //Classes
+                        
+                        class UserProfile {   
+                           constructor(firstName, lastName) { 
+                              this.firstName = firstName;
+                              this.lastName = lastName;     
+                           }  
+                            
+                           getName() {       
+                             console.log(`The Full-Name is ${this.firstName} ${this.lastName}`);    
+                           } 
+                        }
+                        let obj = new UserProfile('John', 'Smith');
+                        obj.getName(); // output: The Full-Name is John Smith
+
+
+    22. You will see the output as-
+   
+                Inside main.js
+            hello from Anjali
+            23
+            535
+            Hello World,     
+                            Greetings to all,
+                            Keep Learning and Practicing!
+            [Function: calculateArea]
+            My name is Anjali Shrivastava
+            Rose Banana
+            Anjali 28
+            The Full-Name is John Smith
+            HI!
+
+
+
+
+
+
  
 
 
