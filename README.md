@@ -19,6 +19,7 @@ ES6 introduces us to many great features like arrow functions, template strings,
 1. Open command promt and create project directory mkdir js6-exapmle
 2. cd js6-example
 3. Run npm init . It will generate package.json which will look like this.
+   
                         {
                           "name": "js6-example",
                           "version": "1.0.0",
@@ -27,7 +28,9 @@ ES6 introduces us to many great features like arrow functions, template strings,
                           "author": "",
                           "license": "ISC",
                         }
-4. Install webpack globally.
+
+   
+5. Install webpack globally.
             npm install -g webpack
    
 6. Install a webpack locally
