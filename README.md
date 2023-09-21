@@ -251,7 +251,7 @@ console.log('Inside main.js');
 
 
 
-# New added code for 
+# Updated Code for 
 .Template literals
 .Rest parameter and separators
 .Maps
