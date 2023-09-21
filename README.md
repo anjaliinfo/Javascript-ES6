@@ -251,6 +251,24 @@ console.log('Inside main.js');
 
 
 
+# New added code for 
+.Template literals
+.Rest parameter and separators
+.Maps
+.Static Methods
+.Getters & Setters
+.String Methods - repeat, startswith , endswith, includes
+. Multiline
+.Implicit Returns
+.Blcok Scoped Variables
+.lock-Scoped Functions
+.Expression Bodies
+.Statement bodies
+.Raw String Access
+.Regular Expression Sticky Matching
+
+
+![image](https://github.com/anjaliinfo/Javascript-ES6/assets/98171488/8747e327-3f66-43c9-a478-9a3299ad7e2a)
 
 
 
